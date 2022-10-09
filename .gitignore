@@ -1,0 +1,20 @@
+# no .a files 
+# 忽略所有.a文件
+
+# but do track lib.a, even though you're ignoring .a files above
+# 表示不忽略(跟踪)匹配到的lib.a文件或目录
+
+# only ignore the TODO file in the current directory, 
+# 只忽略当前目录中的TODO文件，而不是子目录/TODO
+
+# ignore all files in the build/ directory
+# 忽略build/目录中的所有文件
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+# 忽略doc/notes.txt，但不要忽略doc/server/arch.txt
+
+# ignore all .pdf files in the doc/ directory
+# 忽略doc/目录下的所有。pdf文件
+node_modules/
+dist/
+*.zip/

@@ -1,0 +1,33 @@
+{
+    /*
+       1.可以写/*这种注释,有一些json文件不能写
+       2. 一级目录的include配置：将指定的ts文件进行监视
+       3.一级目录的exclude配置：指定文件不进行监视
+       4.一级目录的compilerOptions配置，配置编译器
+          4.1：二级目录target:用来指定ts文件编译成为指定的es版本
+                  target选项:
+                       // EsNext最新的es版本，输入冒号后会出现对应的配置
+          4.2：二级目录module:用来指定ts文件模块化语法指定
+          4.3：二级目录module:用来指定ts文件模块化语法指定
+          4.4：二级目录lib:编译需要使用的指定库，需要提示什么的
+          4.5：二级目录outDir:将js放入指定位置的文件，默认是和ts同级
+          4.6：二级目录outFlie:将全局的ts文件放入一个js文件中
+          4.7：二级目录allowJs:是否对js文件进行编译，默认是false
+          4.8：二级目录checkJs:是否对ts进行检验，默认是false
+          4.9：二级目录removeComments:是否对解析后的js文件注释，默认是false
+          4.10：二级目录noEmit:不生成编译后的文件，默认是false
+          4.10：二级目录noEmitOnError:报错后不生成编译后的文件，默认是false
+          4.11：二级目录alwaysStrict:编译后的文件是否开启严格模式，默认是false
+          4.12：二级目录noImplicitAny:不允许使用隐式的any类型，当忘记使用类型判断的时候，就会用any:不使用ts的类型校验，默认是fasle
+          4.13：二级目录onImplicitThis:不允许使用不确定的this，默认是false
+          4.13：二级目录strictNullChecks:否校验值是否可能为空，当一个返回值可能没有的时候，就会报错，默认是false
+          4.14：二级目录strict:所有的严格校验，就是4.11以下的所有配置，
+    */
+     "compilerOptions":{
+        "module": "ES2015",
+        "target":"ES2015",   // 编译成es3的js版本
+        "noEmitOnError":true,       // 报错时不生成编译后的文件
+        "strict":true,
+      }
+     
+ }

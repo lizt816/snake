@@ -1,0 +1,65 @@
+// less设置变量：less
+@bg-color: #b7d4a8;
+// 首先先清楚默认样式：
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  // 就是当设置宽和边框和内边距的时候都边框和内边距算在盒子内部
+}
+
+#main{
+    width: 360px;
+    height: 420px;
+    background-color: @bg-color;
+    margin: 100px auto;
+    border: 10px solid black;
+    border-radius: 40px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    #stage{
+        width: 304px;
+        height: 304px;
+        border: 2px solid black;
+        position: relative;
+    }
+    #score-panel{
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #snake{
+        &>div{
+            width: 10px; 
+            height: 10px;
+            background-color: #000;
+            border: 1px solid @bg-color;
+            position: absolute;
+        }
+    }
+    #food{
+        position: absolute;
+        left: 40px;
+        top: 100px;
+        width: 10px;
+        height: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        &>div{
+            width: 4px;
+            height: 4px;
+            background-color: #000;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+body{
+    font: 700 20px "Courier";
+}
+
+
