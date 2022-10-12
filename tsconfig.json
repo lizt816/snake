@@ -28,6 +28,7 @@
         "target":"ES2015",   // 编译成es3的js版本
         "noEmitOnError":true,       // 报错时不生成编译后的文件
         "strict":true,
+        "outDir":"./dist",
       }
      
  }
